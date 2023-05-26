@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded_conner"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <Spinner
+            android:id="@+id/main_grade_spinner"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/spinner_design"
+            android:popupBackground="@drawable/spinner_design"
+            android:spinnerMode="dropdown"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:layout_weight="0"/>
+
+        <TextView
+            android:id="@+id/grade_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/grade"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_weight="0"/>
+        <TextView
+            android:id="@+id/score_avg_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/avg"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_weight="0"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <android.widget.Button
+            android:id="@+id/add_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_conner"
+            android:text="@string/add_btn"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <android.widget.Button
+            android:id="@+id/delete_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_conner"
+            android:text="@string/delete_btn"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

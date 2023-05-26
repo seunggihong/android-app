@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/backup_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/baseline_keyboard_arrow_left_24"
+        android:backgroundTint="@color/board_line"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded_conner"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/grade_spinner"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/spinner_design"
+            android:popupBackground="@drawable/spinner_design"
+            android:spinnerMode="dropdown"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/subject_edt"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_margin="3dp"
+            android:inputType="text"
+            android:hint="@string/subject_string"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:background="@drawable/edit_text_design"
+            />
+
+        <Spinner
+            android:id="@+id/credit_spinner"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/spinner_design"
+            android:popupBackground="@drawable/spinner_design"
+            android:spinnerMode="dropdown"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/score_spinner"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/spinner_design"
+            android:popupBackground="@drawable/spinner_design"
+            android:spinnerMode="dropdown"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/done_btn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="@string/done_btn"
+            android:backgroundTint="@color/board_line"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
